@@ -1,0 +1,256 @@
+
+
+.background{
+    background-image: url(../images/background.png);
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+
+    font-family: "Monaco", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 1fr 1fr 100px;
+
+    gap:10px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.container div, 
+.container a{
+    padding: 19px;
+    border: 1px solid #000000;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255), 
+                0 0 20px rgba(0, 0, 0, 0.7) inset;}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: rgb(241, 177, 94);
+    text-align: center;
+}
+
+.menu{
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 70% 15%;
+    gap:5px
+}
+.menu div{
+    margin: 0;
+    text-align: center;
+    background-color: rgb(241, 177, 94);
+}
+.menu a {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(241, 177, 94);
+    cursor: pointer;
+}
+.menu a.reset:active{
+    border: 3px solid #000000;
+    box-shadow:  0 0 10px rgb(255, 255, 255), 
+    0 0 20px rgba(0, 0, 0, 1) inset;
+
+}
+.footer{
+    grid-column: 1/span 3;
+    background-color: rgb(241, 177, 94);
+    text-align: center;
+}
+.playfield{
+    padding: 300px;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+    grid-column-start: 1;
+    grid-column-end: span 2;  
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.playfield a{
+    margin:5%;
+    margin-left: 60px;
+    margin-right: 60px;    
+    border: 1px solid #000000;
+    cursor: pointer
+
+}
+.playfield a.card:active{
+    box-shadow:  0 0 10px rgb(255, 255, 255), 
+    0 0 20px rgba(0, 0, 0, 1) inset;
+}
+.card1 {
+    background-image: url(../images/card1.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center; 
+    background-color: rgb(138, 227, 94);
+}
+.card1.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+
+.card2{
+    background-image: url(../images/card2.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center;
+    background-color: rgb(204, 208, 0);
+}
+.card2.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+
+.card3{
+    background-image: url(../images/card3.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center; 
+    background-color: rgb(142, 160, 246);
+}
+.card3.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+
+.card4 {
+    background-image: url(../images/card4.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center; 
+    background-color: rgb(161, 81, 231);
+}
+.card4.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+
+.card5 {
+    background-image: url(../images/card5.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center; 
+    background-color: rgb(231, 199, 81);
+}
+.card5.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+
+.card6 {
+    background-image: url(../images/card6.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center; 
+    background-color: rgb(136, 158, 246);
+}
+.card6.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+
+.card7 {
+    background-image: url(../images/card7.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center; 
+    background-color: rgb(53, 139, 86);
+}
+.card7.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+.card8 {
+    background-image: url(../images/card8.png);
+    background-repeat: no-repeat;
+    background-size:95%;
+    background-position: center center; 
+    background-color: rgb(216, 188, 73);
+}
+.card8.hidden{
+    background-color: rgb(112, 112, 112);
+    background-image: none ;
+}
+.modal{
+    outline: none;
+    background-color: rgb(20, 147, 178);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    border: 3px solid #000000;
+    margin:0;
+    padding: 0px; 
+    position: absolute;
+    top: 50px;
+    left: 400px;
+    text-align: center;
+}
+
+.newGame{
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    background-color: rgb(241, 177, 94);
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 1px solid #000000 ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7) inset;
+}
+.newGame:active{
+    box-shadow:  0 0 10px rgb(255, 255, 255), 
+    0 0 20px rgba(0, 0, 0, 1) inset;
+}
+
+#difficulty{
+    margin-top: 60px;
+    margin-left: 40px;
+    height: 550px;
+    width:500px;
+    font-family: "Monaco", sans-serif;
+    background-color:rgb(29, 164, 188);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7) inset;
+}
+#difficulty::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.button{
+    height: 100px;
+    width: 300px;
+
+    margin: 5px;
+    font-family: "Monaco", sans-serif;
+    font-size: 35px;
+
+    border: 1px solid #000000 ;
+    border-radius: 10px;
+
+    background-color: rgb(241, 177, 94);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7) inset;
+    cursor: pointer;
+
+}
+.button:active{
+    border: 3px solid #000000;
+    box-shadow:  0 0 10px rgb(255, 255, 255), 
+    0 0 20px rgba(0, 0, 0, 1) inset;    
+}
+    

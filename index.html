@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+
+        <div class="background container">
+            <div class="header">Memory - Game</div>
+            <div class="playfield">
+        
+
+
+                <dialog class="modal" id=popUpSuccess ><h1>Well played!</h1></dialog>
+                <dialog class="modal" id=popUpNoSuccess ><h1>Too bad, next time!</h1></dialog>
+
+                <dialog class="modal" id="player1wins" >
+                    <h1>Player 1 wins, Congratulations!</h1>
+                    <button class="newGame" id="newGame1" style="display:none" type="button">New Game</button>
+                </dialog>
+                <dialog class="modal" id="player2wins" >
+                    <h1>Player 2 wins, Congratulations!</h1>
+                    <button class="newGame" id="newGame2" style="display:none" type="button">New Game</button>
+                </dialog>
+                <dialog class="modal" id="nobodywins" >
+                    <h1>Draw! Everybody is a winner!</h1>
+                    <button class="newGame" id="newGame3" style="display:none" type="button">New Game</button>
+                </dialog>
+                <dialog class="modal" id="difficulty">
+                    <h1>Choose your difficulty:</h1>
+                    <button class="button" id="easy">Easy</button>
+                    <button class="button" id="medium">Medium</button>
+                    <button class="button" id="hard">Hard</button>
+                </dialog>
+
+
+
+            </div>
+
+            <div class="menu">
+                <div class="menuheader" style = "font-size: 25px">Menu</div>
+                <div class="menubody" >Statistics
+                    
+                    <br></br>
+
+                    <p>
+                    <span id="player1style">Player 1:</span>
+                    <p><span id="player1"></span> Points</p>
+                    
+                    <p>
+                    <span id="player2style" >Player 2:</span> 
+                    <p><span id="player2"></span> Points</p>
+
+                </div>
+                <a class="reset" style = "font-size: 25px">Reset</a>
+            </div>
+            <div class="footer">... with fish ...</div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
